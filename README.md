@@ -1,0 +1,2 @@
+# texttranslation
+As the name indicates Text translate project translates text one language to another and also listen to the translated text. Currently, this project supports different languages like English, German, French, Spanish, Portuguese, Italian, Dutch, Polish, Russian, etc. For developing this project used different services of Amazon Web Service like Lambda, Amazon Polly, Amazon Translate, S3 etc.
