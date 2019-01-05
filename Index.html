@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Translate</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,400italic,600">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lmtca52.css?v=1105243484" />	
+
+
+
+<style type="text/css">
+	.container {
+    padding: 10px;
+    align-items: center;
+}
+
+	img {
+		display: none;
+	}
+
+	footer {
+	margin: 50px 0 0 0;
+	padding: 10px 0 0 10px;
+	border-top: 1px solid #eee;
+	}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    padding: 5px 20px;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+</style>
+
+</head>
+<body class="modal-content">
+	<div class="container">
+		<div class="col">
+			<div class="col-md-5 ctrl">
+    			<label class="col-md-4 control-label" for="p_name">Translate from</label> 
+       				<select id="voiceSelectedInput" class="col-md-6">
+						<option value="auto">Any language (detect)</option>
+						<option value='Arabic'>Arabic</option>
+						<option value='Chinese'>Chinese</option>
+						<option value='Czech'>Czech</option>
+						<option value='Danish'>Danish</option>
+						<option value='Dutch'>Dutch</option>
+						<option value='English'>English</option>
+						<option value='Finnish'>Finnish</option>
+						<option value='French'>French</option>
+						<option value='German'>German</option>
+						<option value='Hebrew'>Hebrew</option>
+						<option value='Italian'>Italian</option>
+						<option value='Indonesian'>Indonesian</option>
+						<option value='Japanese'>Japanese</option>
+						<option value='Korean'>Korean</option>
+						<option value='Portuguese'>Portuguese</option>
+						<option value='Polish'>Polish</option>
+						<option value='Russian'>Russian</option>
+						<option value='Spanish'>Spanish</option>	
+						<option value='Swedish'>Swedish</option>
+						<option value='Turkish'>Turkish</option>
+					</select>
+				
+        		<textarea class='lmt__textarea lmt__source_textarea  input-md form-control required' id = 'input_text' data-gramm_editor="false" autofocus tabindex='10' oninput="input_action()" style="overflow-y : scroll; border: 1px solid black; margin: 15px auto;" placeholder="Type or paste text here &#10;(English, French, German, Spanish, Portuguese, Italian, Dutch, Polish, Russian)"></textarea>
+
+        	</div>
+  		</div>      
+		<div class="col">  		
+  			<div class="col-md-5 ctrl">
+			  	<label class="col-md-4  control-label" for="p_name">Translate into</label> 
+				<select id="voiceSelectedOutput" class="col-md-6" onchange="input_action()">
+					<option value='Arabic'>Arabic</option>
+					<option value='Chinese'>Chinese</option>
+					<option value='Czech'>Czech</option>
+					<option value='Danish'>Danish</option>
+					<option value='Dutch'>Dutch</option>
+					<option value='English' selected="selected">English</option>
+					<option value='Finnish'>Finnish</option>
+					<option value='French'>French</option>
+					<option value='German'>German</option>
+					<option value='Hebrew'>Hebrew</option>
+					<option value='Italian'>Italian</option>
+					<option value='Indonesian'>Indonesian</option>
+					<option value='Japanese'>Japanese</option>
+					<option value='Korean'>Korean</option>
+					<option value='Portuguese'>Portuguese</option>
+					<option value='Polish'>Polish</option>
+					<option value='Russian'>Russian</option>
+					<option value='Spanish'>Spanish</option>	
+					<option value='Swedish'>Swedish</option>
+					<option value='Turkish'>Turkish</option>
+				</select>	
+				<div class="col">
+				
+				<textarea class='col-md-10 lmt__textarea lmt__target_textarea lmt__textarea_base_style dl_disabled form-control' id = 'output_text' data-gramm_editor="false" disabled tabindex='10' style="overflow-y: scroll;border: 1px solid black; margin: 15px auto ;">
+				</textarea>
+				
+					<audio id="audio"></audio>
+				<img class="col-md-2" src="img/volume_up.png" id="sayButton">
+				</div>
+				
+
+
+			</div>
+		</div>
+	</div>
+
+	<!-- ============================== Footer ============================== -->
+
+    
+<footer >
+            About me
+            <br>
+            <h3>Aman khandelwal</h3>
+            <a class='fa fa-google-plus' style="font-size:30px;color:red" href="mailto:er.amanjpr98@gmail.com"></a>
+            <a class='fa fa-twitter' style="font-size:30px;color:blue" href='https://twitter.com/Er_Aman7'></a>
+            <a class='fa fa-linkedin' style="font-size:30px;color:blue" href='https://www.linkedin.com/in/aman-khandelwal/'></a>
+</footer>
+
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+</body>
+
+
+</html>
