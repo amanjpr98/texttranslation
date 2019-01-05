@@ -1,5 +1,5 @@
-var API_ENDPOINT_Translate = "https://mh3n67j9d2.execute-api.ap-south-1.amazonaws.com/default"
-var API_ENDPOINT_Speech = "https://8z23jfmrf2.execute-api.ap-south-1.amazonaws.com/speech_convert"
+var API_ENDPOINT_Translate = "translate_text.py at Lambda function"
+var API_ENDPOINT_Speech = "translate_text_sppech.py at Lambda function"
 var isPlaying = false;
 var speech_text = " "
 var translate_text=""
